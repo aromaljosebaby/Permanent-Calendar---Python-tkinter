@@ -74,22 +74,22 @@ window.maxsize(600, 350)
 
 show = tkinter.Label(text='', anchor='se', font=('黑体', 30), fg='black')  # 显示框
 
-l1 = tkinter.Label(window, text="请输入年份：")  # 年份
-l1.pack()
+l1 = tkinter.Label(window, text="请输入年份：",fg='black', bg='SeaGreen1',padx=5,pady=2)  # 年份
+l1.place(relx=0.5,rely=0.4,anchor='center')
 
 t1 = tkinter.StringVar()
 t1.set('')
-entry_year = tkinter.Entry(window, textvariable=t1).pack()
+entry_year = tkinter.Entry(window, textvariable=t1).place(relx=0.5,rely=0.5,anchor='center')
 
-l2 = tkinter.Label(window, text="请输入月份：")  # 月份
-l2.pack()
+l2 = tkinter.Label(window, text="请输入月份：",fg='black', bg='SeaGreen1',padx=5,pady=2)  # 月份
+l2.place(relx=0.5,rely=0.6,anchor='center')
 
 t2 = tkinter.StringVar()
 t2.set('')
-entry_mon = tkinter.Entry(window, textvariable=t2).pack()
+entry_mon = tkinter.Entry(window, textvariable=t2).place(relx=0.5,rely=0.7,anchor='center')
 
 b = tkinter.Button(text='查看万年历', command=f)
-b.pack()
+b.place(relx=0.5,rely=0.9,anchor='center')
 
 # 万年历结果显示在lable中
 
